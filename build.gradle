@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
     maven {
         url 'https://jitpack.io'
+        url 'https://frcmaven.wpi.edu/artifactory/release/'
     }
 }
 

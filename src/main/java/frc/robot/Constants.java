@@ -21,6 +21,12 @@ import edu.wpi.first.math.util.Units;
  */
 public final class Constants {
 
+  public static class AutobahnConstants {
+
+    public static final int kAutobahnPort = 0;
+    public static final String kAutobahnHost = "localhost"; // TODO: change to the actual host
+  }
+
   public static class OperatorConstants {
 
     public static final int kDriverControllerPort = 0;
@@ -127,10 +133,14 @@ public final class Constants {
     public static final int kRearRightCANcoderPort = 1;
 
     // whether the turning CANCoders are flipped
-    public static final SensorDirectionValue kFrontLeftCANcoderDirection = SensorDirectionValue.Clockwise_Positive;
-    public static final SensorDirectionValue kFrontRightCANcoderDirection = SensorDirectionValue.Clockwise_Positive;
-    public static final SensorDirectionValue kRearLeftCANcoderDirection = SensorDirectionValue.Clockwise_Positive;
-    public static final SensorDirectionValue kRearRightCANcoderDirection = SensorDirectionValue.Clockwise_Positive;
+    public static final SensorDirectionValue kFrontLeftCANcoderDirection =
+      SensorDirectionValue.Clockwise_Positive;
+    public static final SensorDirectionValue kFrontRightCANcoderDirection =
+      SensorDirectionValue.Clockwise_Positive;
+    public static final SensorDirectionValue kRearLeftCANcoderDirection =
+      SensorDirectionValue.Clockwise_Positive;
+    public static final SensorDirectionValue kRearRightCANcoderDirection =
+      SensorDirectionValue.Clockwise_Positive;
 
     // magnetic offset for the CANCoders
     // you can find these by connecting to the RoboRIO by USB on the drive station,
@@ -206,7 +216,8 @@ public final class Constants {
     public static final double kTARGET_HEIGHT_METERS = Units.feetToMeters(5);
     // Angle between horizontal and the camera.
     public static final double kCAMERA_PITCH_RADIANS = Units.degreesToRadians(
-        0);
+      0
+    );
     public static final double kCAMERA_PITCH = Units.degreesToRadians(35);
 
     // How far from the target we want to be
@@ -238,6 +249,7 @@ public final class Constants {
   }
 
   public static class LEDConstants {
+
     public static final int canifierPort = 5;
   }
 }
